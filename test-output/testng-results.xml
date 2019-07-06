@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12832" started-at="2019-07-03T03:36:17Z" finished-at="2019-07-03T03:36:30Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12832" started-at="2019-07-03T03:36:17Z" finished-at="2019-07-03T03:36:30Z">
+      <class name="tests.GetAttributePractice">
+        <test-method status="PASS" signature="beforeTestStart()[pri:0, instance:tests.GetAttributePractice@224edc67]" name="beforeTestStart" is-config="true" duration-ms="10505" started-at="2019-07-02T23:36:17Z" finished-at="2019-07-02T23:36:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestStart -->
+        <test-method status="PASS" signature="imageCheckUsingGetAttribute()[pri:0, instance:tests.GetAttributePractice@224edc67]" name="imageCheckUsingGetAttribute" duration-ms="63" started-at="2019-07-02T23:36:27Z" finished-at="2019-07-02T23:36:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imageCheckUsingGetAttribute -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.GetAttributePractice@224edc67]" name="tearDown" is-config="true" duration-ms="2247" started-at="2019-07-02T23:36:27Z" finished-at="2019-07-02T23:36:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=imageCheckUsingGetAttribute status=SUCCESS method=GetAttributePractice.imageCheckUsingGetAttribute()[pri:0, instance:tests.GetAttributePractice@224edc67] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.GetAttributePractice -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
