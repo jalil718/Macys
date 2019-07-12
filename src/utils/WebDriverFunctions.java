@@ -114,8 +114,15 @@ public class WebDriverFunctions {
 	}
 
 	
+
+		
+	public void dropDownById (String locator, String text){
+		WebElement dropDownListBox = driver.findElement(By.id(locator));
+		Select clickThis = new Select(dropDownListBox);
+		clickThis.selectByVisibleText(text);
 	
 	
+	}
 	
 	
 	

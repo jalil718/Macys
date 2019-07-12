@@ -28,12 +28,7 @@ public class HoverOverTest extends Config {
         
        
         
-        TakesScreenshot ts = (TakesScreenshot)driver;
-        File src= ts.getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(src, new File("./Screenshot/Test.png"));
-        System.out.println("Screenshot taken");
         
-
  	
 	}
 	
