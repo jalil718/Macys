@@ -19,7 +19,7 @@ public class DropdownPractice {
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		
-		dropdown(ab.fbDropdownTest,cd.fbDropdownTest);
+//		dropdown(ab.fbDropdownTest,cd.fbDropdownTest);
 		
 		
 	}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE project []>
 
-<project name="Expedia" default="usage" basedir=".">  
+<project name="Macys" default="usage" basedir=".">  
 
 <!-- ========== Initialize Properties =================================== -->
     <property environment="env"/>
@@ -74,7 +74,7 @@
 
     <!-- run -->
     <target name="run" depends="compile">
-        <testng classpath="${test.classpath}:${test.dest}" suitename="Expedia">	
+        <testng classpath="${test.classpath}:${test.dest}" suitename="Macys">	
               	<xmlfileset dir="${ws.home}" includes="Regression.xml"/>
         	
    
