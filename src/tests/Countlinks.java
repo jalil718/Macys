@@ -18,6 +18,8 @@ public class Countlinks extends Config {
 	System.out.println(xy.size());
 	for(int i = 0;i<xy.size();i++){
 		System.out.println(xy.get(i).getText());
+		
+		//jira 123
 	}
 		
 	
