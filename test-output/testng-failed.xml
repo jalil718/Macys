@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="tests.HoverOverTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="beforeTestStart"/>
-          <include name="hoverOTest"/>
-        </methods>
-      </class> <!-- tests.HoverOverTest -->
-      <class name="tests.GetAttributePractice">
-        <methods>
-          <include name="tearDown"/>
-          <include name="beforeTestStart"/>
-        </methods>
-      </class> <!-- tests.GetAttributePractice -->
       <class name="tests.Countlinks">
         <methods>
           <include name="tearDown"/>
+          <include name="Countinglinks"/>
           <include name="beforeTestStart"/>
         </methods>
       </class> <!-- tests.Countlinks -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Regression] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -7,17 +7,25 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import utils.WebDriverFunctions;
 
 public class Config extends WebDriverFunctions {
+	
+	String chromeProfilePath = "/home/(user)/.config/google-chrome/Profile3/";
 
 	@BeforeMethod
 	public void beforeTestStart(){
+		
+		ChromeOptions chromeProfile = new ChromeOptions();
+		chromeProfile.addArguments("chrome.switches", "--disable-extensions");
+		chromeProfile.addArguments("user-data-dir=" + chromeProfilePath);
+		
 		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
-		driver= new ChromeDriver();
+		driver= new ChromeDriver(chromeProfile);
 		driver.get("https://www.macys.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

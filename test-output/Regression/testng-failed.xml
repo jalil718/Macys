@@ -3,25 +3,27 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
   <test name="Test(failed)">
     <classes>
-      <class name="tests.HoverOverTest">
+      <class name="tests.DraganddropjQuery">
         <methods>
-          <include name="tearDown"/>
-          <include name="beforeTestStart"/>
-          <include name="hoverOTest"/>
+          <include name="draganddrop"/>
         </methods>
-      </class> <!-- tests.HoverOverTest -->
+      </class> <!-- tests.DraganddropjQuery -->
+      <class name="tests.Countlinks">
+        <methods>
+          <include name="Countinglinks"/>
+        </methods>
+      </class> <!-- tests.Countlinks -->
       <class name="tests.GetAttributePractice">
         <methods>
-          <include name="tearDown"/>
+          <include name="imageCheckUsingGetAttribute"/>
           <include name="beforeTestStart"/>
         </methods>
       </class> <!-- tests.GetAttributePractice -->
-      <class name="tests.Countlinks">
+      <class name="tests.HoverOverTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="beforeTestStart"/>
+          <include name="hoverOTest"/>
         </methods>
-      </class> <!-- tests.Countlinks -->
+      </class> <!-- tests.HoverOverTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Regression] -->
